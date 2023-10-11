@@ -4,7 +4,7 @@ Note-Taking App where users can:
 
 - View the optimal layout for their devices.
 - Add a new note.
-- VSearch For a specific note.
+- Search For a specific note.
 - Show all notes.
 
 ### Tools
