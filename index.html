@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <script src="static/script.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">NOTE<span class="text-red">S</span></a>
+      </nav>
+    </header>
+
+    <div id="userName">
+      <div class="container">
+        <h1>Please Enter Your Name:</h1>
+        <input type="text" name="name" id="name" />
+        <button type="submit" id="continue">Continue</button>
+      </div>
+    </div>
+
+    <main>
+      <div class="intro">
+        <h1 id="userNameDisplay">
+          <!-- Welcome, <span id="userNameDisplay" class="text-red"></span> -->
+        </h1>
+        <h1>Your Notes Are Important!</h1>
+        <p>
+          Notes app is a simple app where you can find all your saved notes,
+          search them and add new ones.
+        </p>
+      </div>
+
+      <div class="actions">
+        <form action="/add" method="get">
+          <div class="form-control">
+            <input
+              type="text"
+              name="addNote"
+              id="addNote"
+              placeholder="add new note..." />
+            <button id="add" type="submit">Add New</button>
+          </div>
+        </form>
+
+        <form action="/search" method="get">
+          <div class="form-control">
+            <input
+              type="text"
+              name="searchNote"
+              id="searchNote"
+              placeholder="search for note..." />
+            <button id="search" type="submit">Search for note</button>
+          </div>
+          <a class="showAll" href="/notes">Show All Notes</a>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <h4>Notes &copy; | 2023</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+___ STARTING THE APP ____
+- Ask user for his name.(without using prompt)
+- if it is the first time, display: Welcome userName
+- if it is not the first time, display: welcome back userName
+(with local storage to check if it's the first visit for the user)
+
+____ PAGES _____
+- Home
+- All Notes
+- Search Result 
+
+___ HOME PAGE ____
+- Add Note
+- View All Notes
+- Search for note
+
+___ ADD NOTE ____
+- save the note in a file
+
+___ SEARCH ___
+- display the searched note in a result page
